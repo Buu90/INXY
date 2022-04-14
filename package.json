@@ -1,33 +1,19 @@
-# gulp-build-v.2
-
-Install:
-
-npm i;
-
-Start for development:
-
-npm run dev
-
-Project build:
-
-npm run build
-
-Compile the project into a zip archive:
-
-npm run zip
-
-Upload project to ftp server:
-
-npm run deploy
-
-Collect all svg icons into one file:
-
-npm run svgSprive
-
-============================================
-
-Assembly: 
-
+{
+  "name": "gulp-build-v.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build --build",
+    "zip": "gulp deployZIP --build",
+    "deploy": "gulp deployFTP --build",
+    "svgSprive": "gulp svgSprive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
     "browser-sync": "^2.27.8",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -57,17 +43,5 @@ Assembly:
     "webp-converter": "2.2.3",
     "webpack": "^5.70.0",
     "webpack-stream": "^7.0.0"
-    
-============================================
-
- Bonus:
- 
- Responsive menu
-
-============================================
-
-Say thanks:
-
-13LAE7wh26hEu7HjnZBdEhbJhxbzB6MAxq BTC/OMNI
-
-0x789739388E91f9244532B3611E977C0d2184d4FF ETH/ERC-20
+  }
+}
