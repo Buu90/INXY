@@ -1,4 +1,4 @@
-# gulp-build-v.2
+INXY test
 
 Install:
 
@@ -57,17 +57,3 @@ Assembly:
     "webp-converter": "2.2.3",
     "webpack": "^5.70.0",
     "webpack-stream": "^7.0.0"
-    
-============================================
-
- Bonus:
- 
- Responsive menu
-
-============================================
-
-Say thanks:
-
-13LAE7wh26hEu7HjnZBdEhbJhxbzB6MAxq BTC/OMNI
-
-0x789739388E91f9244532B3611E977C0d2184d4FF ETH/ERC-20
