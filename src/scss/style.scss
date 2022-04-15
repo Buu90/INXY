@@ -1,10 +1,96 @@
-@import "fonts";
-@import "reset";
-@import "menu";
+@import 'fonts';
+@import 'reset';
+@import 'menu';
+@import 'latest-news';
+@import 'footer';
 
 body {
-  font-family: Roboto;
-  background-color: #000;
+  background-color: #fdfdfd;
+}
+.main {
+  margin-top: 142px;
+  padding: 0 60px;
+  @media screen and (max-width: 950px) {
+    margin-top: 106px;
+  }
+  @media screen and (max-width: 560px) {
+    padding: 0 35px;
+  }
+  @media screen and (max-width: 450px) {
+    margin-top: 98px;
+  }
+  &__wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: 743px) {
+      justify-content: space-around;
+    }
+    @media screen and (max-width: 560px) {
+      justify-content: space-between;
+    }
+    @media screen and (max-width: 360px) {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+.calendar {
+  display: flex;
+  align-items: center;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  @media screen and (max-width: 520px) {
+    font-size: 12px;
+  }
+  span {
+    margin-right: 5px;
+  }
+  &__week {
+    @media screen and (max-width: 520px) {
+      display: none;
+    }
+  }
+  &__month{
+    @media screen and (max-width: 360px) {
+      display: none;
+    }
+  }
+  &__btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  @media screen and (max-width: 450px) {
+    margin-bottom: 16px;
+  }
+  &__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #121221;
+    @media screen and (max-width: 950px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
 }
 // p {
 //     color: red;
@@ -16,8 +102,3 @@ body {
 //     background: url("@img/test.jpg");
 //   }
 // }
-// @media screen and (min-width: 900px) {
-//     span {
-//         color: red;
-//     }
-//   }

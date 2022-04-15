@@ -1,0 +1,104 @@
+.latest-news {
+  max-width: 270px;
+  margin-bottom: 72px;
+  margin-right: 10px;
+  @media screen and (max-width: 950px) {
+    max-width: 204px;
+    margin-bottom: 48px;
+  }
+  @media screen and (max-width: 950px) {
+    max-width: 180px;
+  }
+  @media screen and (max-width: 450px) {
+    max-width: 144px;
+    margin-bottom: 32px;
+    margin-right: 5px;
+  }
+  @media screen and (max-width: 374px) {
+    margin-right: 0;
+  }
+  cursor: pointer;
+  &__img {
+    width: 100%;
+    margin-bottom: 16px;
+    @media screen and (max-width: 450px) {
+      margin-bottom: 8px;
+    }
+  }
+  &__title {
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #121221;
+    margin-bottom: 24px;
+    @media screen and (max-width: 950px) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+    @media screen and (max-width: 520px) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+    @media screen and (max-width: 450px) {
+      margin-bottom: 12px;
+    }
+  }
+  &__date-block {
+    display: flex;
+    margin-bottom: 8px;
+    @media screen and (max-width: 950px) {
+      margin-bottom: 16px;
+    }
+    @media screen and (max-width: 450px) {
+      margin-bottom: 8px;
+    }
+  }
+  &__text {
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+    color: #444444;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    @media screen and (max-width: 950px) {
+      -webkit-line-clamp: 5;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 12px;
+      line-height: 150%;
+      -webkit-line-clamp: 3;
+    }
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    cursor: pointer;
+  }
+  .date-block {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #949494;
+    @media screen and (max-width: 450px) {
+      font-size: 8px;
+      line-height: 9px;
+    }
+    span {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

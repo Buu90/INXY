@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html', { "title": "Главнаяz" })
+  @@include('html/head.html', { "title": "INXY" })
   <body>
     @@include('html/header.html', { })
-    <main></main>
+    <main class="main">
+      <div class="main__wrapper">
+        <div class="main-header">
+          <h1 class="main-header__title">Latest News</h1>
+          <div class="main-header__calendar calendar">
+            <span class="calendar__week">Friday,</span>
+            <span class="calendar__month">December</span>
+            <span class="calendar__day">12,</span>
+            <span class="calendar__year">2022</span>
+            <button class="calendar__btn">
+              <img src="@img/main-header/sort.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="main__container">
+          @@include('html/latest-news.html', {"src":
+          "@img/latest-news/latest-news-img.jpg" })
+          @@include('html/latest-news.html', { "src":
+          "@img/latest-news/latest-news-img1.jpg" })
+          @@include('html/latest-news.html', { "src":
+          "@img/latest-news/latest-news-img2.jpg" })
+          @@include('html/latest-news.html', {"src":
+          "@img/latest-news/latest-news-img3.jpg" })
+          @@include('html/latest-news.html', { "src":
+          "@img/latest-news/latest-news-img4.jpg" })
+          @@include('html/latest-news.html', { "src":
+          "@img/latest-news/latest-news-img5.jpg" })
+          @@include('html/latest-news.html', { "src":
+          "@img/latest-news/latest-news-img6.jpg" })
+          @@include('html/latest-news.html', {"src":
+          "@img/latest-news/latest-news-img7.jpg" })
+        </div>
+      </div>
+    </main>
     @@include('html/footer.html', { })
     <script src="js/app.min.js"></script>
   </body>
